@@ -1,0 +1,47 @@
+// bootstrap 
+@import "bootstrap__imports";
+
+/* utilitarios e conf */
+@import "../sass/utilities/mixins.scss";
+@import "../sass/utilities/reset";
+@import "../sass/utilities/responsivo";
+@import "../sass/utilities/animation";
+
+// base
+@import "relogio";
+@import "menu";
+@import "footer";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    @include d(ll) {
+        max-width: 1366px;
+    }
+}
+
+
+// pages ==============================
+.body__home {
+    @import "../sass/pages/page__home";
+    @import "style__produtos";
+}
+
+.body__autor {
+    @import "../sass/pages/page__autor";
+}
+
+.body__produtos {
+    @import "../sass/pages/page__produtos";
+}
+.body__contato {
+    @import "../sass/pages/page__contato";
+}
+
+.body__sobre {
+    @import "../sass/pages/page__sobre";
+}
